@@ -1,0 +1,36 @@
+{
+  "name": "generator-simple-node",
+  "version": "0.0.0",
+  "description": "Generates a minimalist node module project",
+  "homepage": "",
+  "author": {
+    "name": "thiagodelgado111",
+    "email": "thiagodelgado111@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.7.0"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo 'can haz tests?'"
+  },
+  "repository": "thiagodelgado111/generator-simple-node",
+  "license": "MIT"
+}

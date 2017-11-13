@@ -1,0 +1,29 @@
+{
+  "name": "<%= moduleName %>",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "author": {
+    "name": "<%= githubUsername %>",
+    "email": "<%= authorEmail %>",
+    "url": "https://github.com/<%= githubUsername %>"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "rm -rf build/* && ./node_modules/.bin/babel src -d build",
+    "build:prod": "BABEL_ENV=production npm run build",
+    "prepublish": "npm run build:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<%= githubUsername %>/<%= moduleName %>.git"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/<%= githubUsername %>/<%= moduleName %>/issues"
+  },
+  "homepage": "https://github.com/<%= githubUsername %>/<%= moduleName %>#readme"
+}

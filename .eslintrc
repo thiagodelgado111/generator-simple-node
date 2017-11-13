@@ -1,0 +1,17 @@
+{
+  "extends": ["airbnb-base"],
+  "env": {
+    "node": true,
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+  },
+  "rules": {
+   "arrow-parens": [2, "as-needed"],
+   "import/prefer-default-export": [1],
+   "indent": ["error", 2, { "MemberExpression": "off", "SwitchCase": 1 }],
+   "function-paren-newline": [0],
+   "no-console": ["error", { allow: ["warn", "error", "log"] }]
+  }
+}
