@@ -9,9 +9,17 @@
   },
   "rules": {
    "arrow-parens": [2, "as-needed"],
+   "max-len": [2, 100, 2],
+   "consistent-return": [0],
    "import/prefer-default-export": [1],
    "indent": ["error", 2, { "MemberExpression": "off", "SwitchCase": 1 }],
    "function-paren-newline": [0],
-   "no-console": ["error", { allow: ["warn", "error", "log"] }]
+   "no-console": ["error", { allow: ["warn", "error", "log"] }],
+   "space-before-function-paren": [0],
+   "object-curly-spacing": [2, "always", {
+     "objectsInObjects": false,
+     "arraysInObjects": false
+   }],
+   "object-curly-newline": [2, { "consistent": true }]
   }
 }
