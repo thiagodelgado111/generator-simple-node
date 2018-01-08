@@ -2,9 +2,17 @@ const Generator = require('yeoman-generator');
 
 module.exports = class extends Generator {
   writing() {
-    this.fs.copy(
-      this.templatePath('**/.*'),
-      this.destinationPath(),
-    );
+    [
+      'babelrc',
+      'editorconfig',
+      'eslintignore',
+      'eslintrc',
+      'gitattributes',
+      'gitignore',
+      'nvmrc',
+    ].map(file => this.fs.copy(
+      this.templatePath(file),
+      this.destinationPath(`.${file}`),
+    ));
   }
 };
